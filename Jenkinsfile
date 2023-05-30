@@ -6,14 +6,14 @@ pipeline {
                 echo "Iniciando pipeline"
             }
         }
-        stage('Build'){
-            steps{
+        stage('Build') {
+            steps {
                 sh 'mvn -B package'
             }
         }
 
-        }
     }
+}
 // pipeline {
 // agent any
 // stages {
